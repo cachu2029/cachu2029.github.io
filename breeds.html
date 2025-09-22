@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Meowlog — Breeds</title>
+  <meta name="description" content="Explore various cat breeds in this cat-themed magazine.">
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:'Comic Sans MS','Segoe UI',sans-serif;
+      background:linear-gradient(180deg,#ffe9f0,#fff8e1);
+      color:#222;
+    }
+    .site-wrapper{display:flex;flex-direction:column;align-items:center;padding:24px;min-height:100vh}
+    .container{width:100%;max-width:1100px;background:#fff;border-radius:24px;box-shadow:0 8px 20px rgba(0,0,0,0.1);overflow:hidden}
+    header{display:flex;justify-content:space-between;align-items:center;background:#ffb6c1;padding:20px 30px}
+    .brand{font-size:28px;font-weight:700;color:#4b2e2e}
+    nav ul{list-style:none;display:flex;gap:16px;margin:0;padding:0}
+    nav a{text-decoration:none;color:#4b2e2e;padding:6px 10px;border-radius:8px;font-weight:600;}
+    nav a:hover{background:#ffdce2;}
+    main{padding:36px 50px}
+    h2{font-size:32px;margin-top:0;color:#4b2e2e}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px;margin-top:24px}
+    .card{background:#fff7f8;border:2px solid #ffccd5;border-radius:16px;padding:16px;box-shadow:0 4px 12px rgba(0,0,0,0.05);transition: transform 0.2s, box-shadow 0.2s;}
+    .card img{width:100%;border-radius:12px}
+    .card h3{margin:12px 0 6px;font-size:20px;color:#5c3b3b}
+    .card p{margin:0}
+    .card:hover{transform: translateY(-5px);box-shadow:0 8px 20px rgba(0,0,0,0.15);}
+    footer{background:#ffb6c1;text-align:center;padding:14px;color:#4b2e2e;font-weight:600;margin-top:20px}
+  </style>
+</head>
+<body>
+  <div class="site-wrapper">
+    <div class="container">
+      <header>
+        <div class="brand">🐾 Meowlog</div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breeds.html">Breeds</a></li>
+            <li><a href="care.html">Care Tips</a></li>
+            <li><a href="memes.html">Memes</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h2>Cat Breeds Spotlight</h2>
+        <div class="card-grid">
+          <div class="card">
+            <img src="https://images.wagwalkingweb.com/media/daily_wag/blog_articles/hero/1678934108.5188236/everything-you-need-to-know-about-siamese-cats.png" alt="Siamese cat">
+            <h3>Siamese</h3>
+            <p>Sleek, vocal, and affectionate with striking blue eyes.</p>
+          </div>
+          <div class="card">
+            <img src="https://www.dutch.com/cdn/shop/articles/shutterstock_538333303.jpg?v=1683242960" alt="Persian cat">
+            <h3>Persian</h3>
+            <p>Fluffy, calm, and gentle, known for their sweet personality.</p>
+          </div>
+          <div class="card">
+            <img src="https://tica.org/wp-content/uploads/2018/08/Sphynx1-e1730736648691.jpg" alt="Sphynx cat">
+            <h3>Sphynx</h3>
+            <p>Hairless, friendly, and loves attention — the ultimate lap cat.</p>
+          </div>
+          <div class="card">
+            <img src="https://www.zooplus.ie/magazine/wp-content/uploads/2019/04/maine-coon-cat-breed.webp" alt="Maine Coon cat">
+            <h3>Maine Coon</h3>
+            <p>Large, friendly, and loyal — the “gentle giants” of cats.</p>
+          </div>
+          <div class="card">
+            <img src="https://static.wixstatic.com/media/a0115a_4a836d0ffa8744ff9130ae29d2a2c3ef~mv2.jpg/v1/fill/w_870,h_434,al_c,q_85,enc_avif,quality_auto/a0115a_4a836d0ffa8744ff9130ae29d2a2c3ef~mv2.jpg" alt="British Shorthair cat">
+            <h3>British Shorthair</h3>
+            <p>Round-faced, calm, and easygoing — known for their plush coats.</p>
+          </div>
+          <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQCHXta4YSysA5QtEed-haNPrzp5HXV4-dow&s" alt="Ragdoll cat">
+            <h3>Ragdoll</h3>
+            <p>Gentle, affectionate, and often go floppy when held — true cuddle cats.</p>
+          </div>
+        </div>
+      </main>
+      <footer>🐾 Made with love for cats • Meowlog </footer>
+    </div>
+  </div>
+</body>
+</html>
